@@ -149,7 +149,8 @@ class NeumorphicCheckbox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final NeumorphicThemeData theme = NeumorphicTheme.currentTheme(context);
-    final selectedColor = this.style.selectedColor ?? theme.accentColor;
+    final selectedColor = this.style.selectedColor ?? Color(0xFFA3ACC7);
+    // theme.accentColor;
 
     final double selectedDepth =
         -1 * (this.style.selectedDepth ?? theme.depth).abs();
