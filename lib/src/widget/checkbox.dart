@@ -1,4 +1,5 @@
 import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_neumorphic/src/neumorphic_icons.dart';
 import 'package:flutter_neumorphic/src/widget/container.dart';
 
@@ -170,7 +171,8 @@ class NeumorphicCheckbox extends StatelessWidget {
 
     Color? color = isSelected ? selectedColor : null;
     if (!this.isEnabled) {
-      color = null;
+      color = Colors.red;
+      //color = null;
     }
 
     Color iconColor = isSelected ? theme.baseColor : selectedColor;
