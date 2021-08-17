@@ -175,7 +175,9 @@ class NeumorphicCheckbox extends StatelessWidget {
       //color = null;
     }
 
-    Color iconColor = isSelected ? theme.baseColor : selectedColor;
+    //Color iconColor = isSelected ? theme.baseColor : selectedColor;
+    Color iconColor = isSelected ? Color(0xFF41D9E2) : Color(0xFFA3ACC7);
+    ;
     if (!this.isEnabled) {
       iconColor = theme.disabledColor;
     }
